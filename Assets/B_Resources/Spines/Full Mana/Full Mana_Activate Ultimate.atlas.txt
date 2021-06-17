@@ -1,0 +1,62 @@
+
+Full Mana_Activate Ultimate.png
+size: 380,182
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+9/0
+  rotate: true
+  xy: 342, 104
+  size: 76, 21
+  orig: 77, 23
+  offset: 0, 0
+  index: -1
+9/1
+  rotate: true
+  xy: 228, 6
+  size: 102, 48
+  orig: 102, 48
+  offset: 0, 0
+  index: -1
+9/2
+  rotate: false
+  xy: 183, 110
+  size: 103, 70
+  orig: 103, 70
+  offset: 0, 0
+  index: -1
+9/3
+  rotate: true
+  xy: 288, 66
+  size: 114, 52
+  orig: 115, 52
+  offset: 0, 0
+  index: -1
+9/4
+  rotate: true
+  xy: 183, 3
+  size: 105, 43
+  orig: 105, 43
+  offset: 0, 0
+  index: -1
+9/5
+  rotate: false
+  xy: 278, 28
+  size: 100, 36
+  orig: 100, 36
+  offset: 0, 0
+  index: -1
+9/6
+  rotate: false
+  xy: 278, 10
+  size: 92, 16
+  orig: 92, 17
+  offset: 0, 0
+  index: -1
+light2
+  rotate: false
+  xy: 2, 2
+  size: 179, 178
+  orig: 197, 196
+  offset: 9, 9
+  index: -1

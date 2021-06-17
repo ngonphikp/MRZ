@@ -1,0 +1,188 @@
+
+M1018.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Banchanphai
+  rotate: true
+  xy: 1224, 1885
+  size: 139, 131
+  orig: 139, 131
+  offset: 0, 0
+  index: -1
+Chabiet
+  rotate: true
+  xy: 1357, 1900
+  size: 124, 108
+  orig: 124, 108
+  offset: 0, 0
+  index: -1
+HueSaturation 1
+  rotate: true
+  xy: 2, 7
+  size: 534, 667
+  orig: 534, 670
+  offset: 0, 0
+  index: -1
+banchantrai
+  rotate: false
+  xy: 1202, 1102
+  size: 170, 213
+  orig: 170, 213
+  offset: 0, 0
+  index: -1
+bong
+  rotate: false
+  xy: 555, 1349
+  size: 468, 248
+  orig: 470, 250
+  offset: 1, 1
+  index: -1
+canhphai
+  rotate: false
+  xy: 527, 645
+  size: 500, 639
+  orig: 500, 639
+  offset: 0, 0
+  index: -1
+canhtraiA
+  rotate: false
+  xy: 875, 1650
+  size: 184, 374
+  orig: 184, 374
+  offset: 0, 0
+  index: -1
+canhtraiB
+  rotate: false
+  xy: 2, 543
+  size: 523, 741
+  orig: 529, 741
+  offset: 6, 0
+  index: -1
+canhtraiC
+  rotate: false
+  xy: 2, 1286
+  size: 551, 738
+  orig: 551, 738
+  offset: 0, 0
+  index: -1
+duiphai
+  rotate: true
+  xy: 1372, 1583
+  size: 135, 97
+  orig: 135, 97
+  offset: 0, 0
+  index: -1
+duitrai
+  rotate: false
+  xy: 1219, 1515
+  size: 151, 186
+  orig: 151, 186
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 1061, 1703
+  size: 321, 161
+  orig: 321, 161
+  offset: 0, 0
+  index: -1
+hamduoi_01
+  rotate: true
+  xy: 1025, 1317
+  size: 331, 192
+  orig: 335, 192
+  offset: 0, 0
+  index: -1
+hamduoi_02
+  rotate: true
+  xy: 1029, 815
+  size: 248, 162
+  orig: 248, 162
+  offset: 0, 0
+  index: -1
+hamtren
+  rotate: false
+  xy: 555, 1599
+  size: 318, 425
+  orig: 319, 435
+  offset: 0, 10
+  index: -1
+nuoc_bot_00007
+  rotate: false
+  xy: 734, 562
+  size: 131, 81
+  orig: 133, 83
+  offset: 1, 1
+  index: -1
+nuoc_bot_00008
+  rotate: true
+  xy: 1193, 837
+  size: 226, 162
+  orig: 228, 164
+  offset: 1, 1
+  index: -1
+nuoc_bot_00009
+  rotate: true
+  xy: 1029, 1065
+  size: 250, 171
+  orig: 252, 173
+  offset: 1, 1
+  index: -1
+nuoc_bot_00010
+  rotate: true
+  xy: 1029, 603
+  size: 210, 177
+  orig: 212, 179
+  offset: 1, 1
+  index: -1
+nuoc_bot_00011
+  rotate: false
+  xy: 527, 557
+  size: 205, 86
+  orig: 207, 88
+  offset: 1, 1
+  index: -1
+nuoc_bot_00012
+  rotate: true
+  xy: 1315, 1720
+  size: 163, 89
+  orig: 165, 91
+  offset: 1, 1
+  index: -1
+nuoc_bot_00013
+  rotate: true
+  xy: 1224, 1719
+  size: 164, 89
+  orig: 166, 91
+  offset: 1, 1
+  index: -1
+nuoc_bot_00014
+  rotate: false
+  xy: 867, 573
+  size: 110, 70
+  orig: 112, 72
+  offset: 1, 1
+  index: -1
+nuoc_bot_00015
+  rotate: false
+  xy: 671, 2
+  size: 56, 28
+  orig: 58, 30
+  offset: 1, 1
+  index: -1
+taitrai
+  rotate: true
+  xy: 1219, 1395
+  size: 118, 204
+  orig: 118, 204
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 671, 32
+  size: 503, 523
+  orig: 503, 544
+  offset: 0, 21
+  index: -1

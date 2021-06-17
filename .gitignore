@@ -1,0 +1,13 @@
+﻿.vs
+Json
+Library
+Logs
+obj
+Packages
+.vsconfig
+Assembly-CSharp.csproj
+Assembly-CSharp-firstpass.csproj
+Demo.apk
+MRZ.sln
+spine-unity.csproj
+spine-unity-editor.csproj

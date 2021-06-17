@@ -1,0 +1,22 @@
+{
+  "lst": [
+    {
+      "id": "T1052",
+      "maxHP": 200,
+      "attack": 20,
+      "speedRun": 1
+    },
+    {
+      "id": "M1010",
+      "maxHP": 30,
+      "attack": 3,
+      "speedRun": 0.4
+    },
+    {
+      "id": "M1018",
+      "maxHP": 30,
+      "attack": 5,
+      "speedRun": 0.75
+    }
+  ]
+}

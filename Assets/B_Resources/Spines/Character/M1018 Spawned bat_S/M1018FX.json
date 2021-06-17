@@ -1,0 +1,130 @@
+{
+"skeleton": { "hash": "esXegi0bzGePN5OX86eTanR4t9I", "spine": "3.8.95", "images": "./images/", "audio": "../../../Sound/" },
+"bones": [
+	{ "name": "root", "x": -649.31, "y": 1120.64 },
+	{ "name": "FX", "parent": "root", "x": 649.31, "y": -1120.64, "color": "3fff00ff" },
+	{
+		"name": "FX/1/00029",
+		"parent": "FX",
+		"x": 16.41,
+		"y": -22.8,
+		"scaleX": 5.0942,
+		"scaleY": 5.0942,
+		"color": "3fff00ff"
+	},
+	{
+		"name": "FX/3/00",
+		"parent": "FX",
+		"x": 9.57,
+		"y": 3.95,
+		"scaleX": 5.0508,
+		"scaleY": 5.0508,
+		"color": "3fff00ff"
+	}
+],
+"slots": [
+	{ "name": "FX/1/00029", "bone": "FX/1/00029", "color": "393939b9" },
+	{ "name": "FX/1/29", "bone": "FX/1/00029", "color": "a047bdc2", "blend": "additive" },
+	{ "name": "FX/3/00", "bone": "FX/3/00", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"FX/1/00029": {
+				"FX/1/00030": { "width": 236, "height": 230 },
+				"FX/1/00031": { "width": 236, "height": 230 },
+				"FX/1/00032": { "width": 236, "height": 230 },
+				"FX/1/00033": { "width": 236, "height": 230 },
+				"FX/1/00034": { "width": 236, "height": 230 },
+				"FX/1/00035": { "width": 236, "height": 230 },
+				"FX/1/00036": { "width": 236, "height": 230 },
+				"FX/1/00037": { "width": 236, "height": 230 },
+				"FX/1/00038": { "width": 236, "height": 230 },
+				"FX/1/00039": { "width": 236, "height": 230 },
+				"FX/1/00040": { "width": 236, "height": 230 }
+			},
+			"FX/1/29": {
+				"FX/1/00030": { "width": 236, "height": 230 },
+				"FX/1/00031": { "width": 236, "height": 230 },
+				"FX/1/00032": { "width": 236, "height": 230 },
+				"FX/1/00033": { "width": 236, "height": 230 },
+				"FX/1/00034": { "width": 236, "height": 230 },
+				"FX/1/00035": { "width": 236, "height": 230 },
+				"FX/1/00036": { "width": 236, "height": 230 },
+				"FX/1/00037": { "width": 236, "height": 230 },
+				"FX/1/00038": { "width": 236, "height": 230 },
+				"FX/1/00039": { "width": 236, "height": 230 },
+				"FX/1/00040": { "width": 236, "height": 230 }
+			},
+			"FX/3/00": {
+				"FX/3/00": { "x": 5.04, "y": 2.38, "width": 288, "height": 272 },
+				"FX/3/03": { "width": 288, "height": 272 },
+				"FX/3/04": { "width": 288, "height": 272 },
+				"FX/3/07": { "width": 288, "height": 272 },
+				"FX/3/08": { "width": 288, "height": 272 },
+				"FX/3/11": { "width": 288, "height": 272 }
+			}
+		}
+	}
+],
+"events": {
+	"Water_splash_05": { "audio": "Hero_Sfx/Water_splash_05.wav" }
+},
+"animations": {
+	"Impact": {
+		"slots": {
+			"FX/1/00029": {
+				"color": [
+					{ "time": 0.4, "color": "393939b9" },
+					{ "time": 0.7333, "color": "39393900" }
+				],
+				"attachment": [
+					{ "name": "FX/1/00030" },
+					{ "time": 0.0667, "name": "FX/1/00031" },
+					{ "time": 0.1333, "name": "FX/1/00032" },
+					{ "time": 0.2, "name": "FX/1/00033" },
+					{ "time": 0.2667, "name": "FX/1/00034" },
+					{ "time": 0.3333, "name": "FX/1/00035" },
+					{ "time": 0.4, "name": "FX/1/00036" },
+					{ "time": 0.4667, "name": "FX/1/00037" },
+					{ "time": 0.5333, "name": "FX/1/00038" },
+					{ "time": 0.6, "name": "FX/1/00039" },
+					{ "time": 0.6667, "name": "FX/1/00040" },
+					{ "time": 0.7333, "name": null }
+				]
+			},
+			"FX/1/29": {
+				"attachment": [
+					{ "name": "FX/1/00030" },
+					{ "time": 0.0667, "name": "FX/1/00031" },
+					{ "time": 0.1333, "name": "FX/1/00032" },
+					{ "time": 0.2, "name": "FX/1/00033" },
+					{ "time": 0.2667, "name": "FX/1/00034" },
+					{ "time": 0.3333, "name": "FX/1/00035" },
+					{ "time": 0.4, "name": "FX/1/00036" },
+					{ "time": 0.4667, "name": "FX/1/00037" },
+					{ "time": 0.5333, "name": "FX/1/00038" },
+					{ "time": 0.6, "name": "FX/1/00039" },
+					{ "time": 0.6667, "name": "FX/1/00040" },
+					{ "time": 0.7333, "name": null }
+				]
+			},
+			"FX/3/00": {
+				"attachment": [
+					{ "name": "FX/3/00" },
+					{ "time": 0.0667, "name": "FX/3/03" },
+					{ "time": 0.1333, "name": "FX/3/04" },
+					{ "time": 0.2, "name": "FX/3/07" },
+					{ "time": 0.2667, "name": "FX/3/08" },
+					{ "time": 0.3333, "name": "FX/3/11" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"events": [
+			{ "name": "Water_splash_05" }
+		]
+	}
+}
+}

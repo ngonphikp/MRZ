@@ -1,0 +1,110 @@
+
+M1010FX.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mix_14_00015
+  rotate: false
+  xy: 538, 27
+  size: 347, 236
+  orig: 349, 238
+  offset: 1, 1
+  index: -1
+Mix_14_00017
+  rotate: false
+  xy: 637, 592
+  size: 356, 246
+  orig: 358, 248
+  offset: 1, 1
+  index: -1
+Mix_14_00019
+  rotate: false
+  xy: 274, 282
+  size: 360, 258
+  orig: 362, 260
+  offset: 1, 1
+  index: -1
+Mix_14_00021
+  rotate: false
+  xy: 2, 579
+  size: 361, 259
+  orig: 363, 261
+  offset: 1, 1
+  index: -1
+Mix_14_00023
+  rotate: true
+  xy: 636, 265
+  size: 275, 264
+  orig: 277, 266
+  offset: 1, 1
+  index: -1
+Mix_14_00025
+  rotate: true
+  xy: 272, 6
+  size: 274, 264
+  orig: 276, 266
+  offset: 1, 1
+  index: -1
+Mix_14_00027
+  rotate: true
+  xy: 2, 2
+  size: 284, 268
+  orig: 286, 270
+  offset: 1, 1
+  index: -1
+Mix_14_00029
+  rotate: true
+  xy: 2, 288
+  size: 289, 270
+  orig: 291, 272
+  offset: 1, 1
+  index: -1
+Mix_14_00031
+  rotate: true
+  xy: 365, 542
+  size: 296, 270
+  orig: 298, 272
+  offset: 1, 1
+  index: -1
+Mix_14_00035
+  rotate: false
+  xy: 887, 115
+  size: 119, 148
+  orig: 121, 150
+  offset: 1, 1
+  index: -1
+
+M1010FX2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mix_14_00009
+  rotate: true
+  xy: 745, 36
+  size: 295, 214
+  orig: 297, 216
+  offset: 1, 1
+  index: -1
+Mix_14_00011
+  rotate: true
+  xy: 243, 22
+  size: 309, 249
+  orig: 311, 251
+  offset: 1, 1
+  index: -1
+Mix_14_00013
+  rotate: true
+  xy: 2, 2
+  size: 329, 239
+  orig: 331, 241
+  offset: 1, 1
+  index: -1
+Mix_14_00033
+  rotate: true
+  xy: 494, 32
+  size: 299, 249
+  orig: 301, 251
+  offset: 1, 1
+  index: -1
