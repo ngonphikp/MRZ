@@ -50,7 +50,7 @@ public class C_Bullet : MonoBehaviour
 
         //Destroy(gameObject);
 
-        mybody.AddForce(transform.right * speed * 20);
+        if (mybody) mybody.AddForce(transform.right * speed * 20);
 
         yield break;
     }

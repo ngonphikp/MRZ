@@ -344,7 +344,7 @@ MonoBehaviour:
   status: 2
   isAutoUlti: 1
   isUlti: 0
-  radius: 1
+  radius: 0.5
   direction: {x: -1, y: 0, z: 0}
   target: {fileID: 0}
   posHit: {fileID: 1880130280186676975}
