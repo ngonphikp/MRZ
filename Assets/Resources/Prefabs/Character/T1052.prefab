@@ -316,6 +316,7 @@ MonoBehaviour:
   radar: {fileID: 7424503898758289557}
   UICharater: {fileID: 5206242770603129291}
   character:
+    id: 
     maxHP: 0
     maxEP: 0
     attack: 0
