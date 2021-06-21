@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class C_Radar : MonoBehaviour
 {
-    [SerializeField] Find_Tag find_Tag = Find_Tag.Enemy;
+    [SerializeField] C_Enum.Find_Tag find_Tag = C_Enum.Find_Tag.Enemy;
 
     Dictionary<int, Target> targets = new Dictionary<int, Target>();
 
@@ -73,12 +73,6 @@ public class C_Radar : MonoBehaviour
             targets.Remove(key);
         }
     }
-
-    private enum Find_Tag
-    {
-        Enemy,
-        Hero
-    }    
 }
 
 public class Target

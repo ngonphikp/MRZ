@@ -23,7 +23,7 @@ public static class C_LibSkill
         if (isRotate) // Bullet có định hướng ban đầu
         {
             Vector3 A = bl.gameObject.transform.position;
-            Vector3 B = target.transform.position;
+            Vector3 B = target.posHit.transform.position;
             float angle = Mathf.Rad2Deg * Mathf.Atan((B.y - A.y) / (B.x - A.x));
             bl.gameObject.transform.Rotate(0, 0, angle);
         }

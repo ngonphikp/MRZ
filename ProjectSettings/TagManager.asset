@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Hero
+  - Bullet
+  - Radar
+  - Bouncy
   layers:
   - Default
   - TransparentFX
