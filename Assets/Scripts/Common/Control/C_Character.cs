@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NPS;
 using System;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Pooling_C_Character : Pooling<C_Character> { }
@@ -38,11 +39,13 @@ public class C_Character : MonoBehaviour
     I_Character ctl = null;
 
     SkeletonAnimation sa = null;
+    Image img = null;
 
     private void Awake()
     {
         ctl = this.GetComponent<I_Character>();
         sa = anim.gameObject.GetComponent<SkeletonAnimation>();
+        img = anim.gameObject.GetComponent<Image>();
     }
 
     Status oldStatus;
@@ -52,7 +55,7 @@ public class C_Character : MonoBehaviour
 
         AutoAttack = Timing.RunCoroutine(_AutoAttack());
         AutoRun = Timing.RunCoroutine(_AutoRun());
-        AutoFind = Timing.RunCoroutine(_AutoFind());        
+        AutoFind = Timing.RunCoroutine(_AutoFind());
     }
 
     Action callback;
@@ -71,6 +74,9 @@ public class C_Character : MonoBehaviour
 
         UICharater.hp = character.CurHP * 1.0f / character.maxHP;
         UICharater.ep = character.CurEP * 1.0f / character.maxEP;
+
+        UICharater.ChangeHp();
+        UICharater.ChangeEp();
 
         isLive = character.CurHP != 0;
 
@@ -95,7 +101,7 @@ public class C_Character : MonoBehaviour
                     float step = character.speedRun * Time.deltaTime * speed;
                     transform.position = Vector3.MoveTowards(transform.position, finish, step);
                 }
-                else if(isRun) status = Status.Run;
+                else if (isRun) status = Status.Run;
             }
             yield return Timing.WaitForOneFrame;
         }
@@ -117,9 +123,9 @@ public class C_Character : MonoBehaviour
                         float step = character.speedRun * Time.deltaTime * speed;
                         transform.position = Vector3.MoveTowards(transform.position, tg.ctl.gameObject.transform.position, step);
                     }
-                    else if(isAttack) status = Status.Attack;
+                    else if (isAttack) status = Status.Attack;
                 }
-                else if(isFind) status = Status.Find;
+                else if (isFind) status = Status.Find;
             }
             yield return Timing.WaitForOneFrame;
         }
@@ -204,7 +210,7 @@ public class C_Character : MonoBehaviour
 
         while (true)
         {
-            if(isAnim1())
+            if (isAnim1())
             {
                 anim.SetTrigger("anim6");
                 ctl.Play(6);
@@ -228,10 +234,12 @@ public class C_Character : MonoBehaviour
 
             yield return Timing.WaitForSeconds(delta);
 
-            sa.skeleton.SetColor(new Color(1.0f, 1.0f, 1.0f, op));
+            if (sa) sa.skeleton.SetColor(new Color(1.0f, 1.0f, 1.0f, op));
+            if (img) img.color = new Color(1.0f, 1.0f, 1.0f, op);
         }
 
-        sa.skeleton.SetColor(new Color(1.0f, 1.0f, 1.0f, 1.0f));
+        if (sa) sa.skeleton.SetColor(new Color(1.0f, 1.0f, 1.0f, 1.0f));
+        if (img) img.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         this.gameObject.SetActive(false);
     }
 
@@ -255,7 +263,7 @@ public class C_Character : MonoBehaviour
         speed = value;
 
         anim.speed = speed;
-        sa.timeScale = speed;
+        if (sa) sa.timeScale = speed;
     }
 
     private void OnDestroy()

@@ -17,6 +17,12 @@
       "maxHP": 30,
       "attack": 5,
       "speedRun": 0.75
+    },
+    {
+      "id": "M2001",
+      "maxHP": 30,
+      "attack": 3,
+      "speedRun": 0.4
     }
   ]
 }
