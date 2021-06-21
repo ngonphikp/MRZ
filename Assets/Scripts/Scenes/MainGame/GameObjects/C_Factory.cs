@@ -15,7 +15,7 @@ public class C_Factory : MonoBehaviour
     {
         for (int i = 0; i < datas.Length; i++)
         {
-            if (MainGame.instance.isEndGame) break;
+            if (MainGame2.instance.isEndGame) break;
 
             string key = datas[i].id;
             if (!dic.ContainsKey(key))

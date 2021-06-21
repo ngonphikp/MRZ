@@ -200,7 +200,7 @@ public class C_Character : MonoBehaviour
         CircleCollider2D cc = GetComponent<CircleCollider2D>();
         if (cc != null) cc.enabled = false;
         status = Status.None;
-        MainGame.instance.DestroyCharacter(character.isEnemy);
+        MainGame2.instance.DestroyCharacter(character.isEnemy);
 
         while (true)
         {

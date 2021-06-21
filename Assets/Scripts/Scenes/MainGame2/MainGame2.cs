@@ -10,9 +10,6 @@ public class MainGame2 : MonoBehaviour
 
     [SerializeField] Transform[] posCharacter = new Transform[5];
 
-    [SerializeField] Transform posAvatar = null;
-    [SerializeField] C_Avatar prbAvatar = null;
-
     [SerializeField] C_Factory factory = null;
 
     [SerializeField] Text txtRound = null;
@@ -50,7 +47,6 @@ public class MainGame2 : MonoBehaviour
         popUp.SetActive(false);
         countTeamDT = 0;
         countEnemyDt = 0;
-        stamina.Sta = 0;
 
         isEndGame = false;
         timeSum = oldTimeSum;
@@ -59,11 +55,7 @@ public class MainGame2 : MonoBehaviour
         LoadData();
 
         CountDownTime = Timing.RunCoroutine(_CountDownTime());
-        Stamina = Timing.RunCoroutine(_Stamina());
-
-        btnSU.interactable = false;
-        yield return Timing.WaitForSeconds(5.0f);
-        btnSU.interactable = true;
+        yield break;
     }
 
     private void DemoData()
@@ -86,10 +78,6 @@ public class MainGame2 : MonoBehaviour
 
     private void LoadData()
     {
-        foreach (Transform child in posAvatar)
-        {
-            Destroy(child.gameObject);
-        }
 
         for (int i = 0; i < posCharacter.Length; i++)
         {
@@ -102,15 +90,11 @@ public class MainGame2 : MonoBehaviour
         teams.Clear();
         for (int i = 0; i < datas.Count; i++)
         {
-            C_Avatar av = Instantiate(prbAvatar, posAvatar);
-
             C_Character ctAs = ResourceManager.instance.LoadCharacter("Prefabs/Character/" + datas[i].id);
             C_Character ct = Instantiate(ctAs, posCharacter[datas[i].position]);
 
-            ct.Set(datas[i], null, av);
+            ct.Set(datas[i], null);
             teams.Add(ct);
-
-            av.Set(ct);
         }
     }
 
@@ -187,41 +171,6 @@ public class MainGame2 : MonoBehaviour
         }
     }
 
-    public void SpeedUp(bool isSU)
-    {
-        if (isSU == this.isSU) return;
-
-        this.isSU = isSU;
-        for (int i = 0; i < teams.Count; i++)
-        {
-            teams[i].ScaleSpeed(isSU ? valueSU : 1.0f);
-        }
-    }
-
-    [SerializeField] Button btnSU = null;
-    [SerializeField] C_Stamina stamina = null;
-    [SerializeField] float timeSta = 0.2f;
-    [SerializeField] float stepSta = 0.01f;
-    [SerializeField] float valueSU = 3.0f;
-
-    public bool isSU = false;
-    [SerializeField] float suSta = 0.02f;
-    public bool isSta = false;
-
-    private IEnumerator<float> _Stamina()
-    {
-        stamina.Sta = 0;
-
-        while (true)
-        {
-            yield return Timing.WaitForSeconds(timeSta);
-            float step = isSta ? (stepSta - suSta) : stepSta;
-
-            stamina.Sta += step;
-            if (stamina.Sta == 0) SpeedUp(false);
-        }
-    }
-
     int countTeamDT = 0;
     int countEnemyDt = 0;
 
@@ -254,22 +203,5 @@ public class MainGame2 : MonoBehaviour
         yield return Timing.WaitForSeconds(1.0f);
         popUp.SetActive(true);
         factory.Realese();        
-    }
-
-    bool isAuto = false;
-
-    [SerializeField] Image imgAuto = null;
-    [SerializeField] Sprite enAuto = null;
-    [SerializeField] Sprite disAuto = null;
-
-    public void AutoUltimate()
-    {
-        isAuto = !isAuto;
-        for (int i = 0; i < teams.Count; i++)
-        {
-            teams[i].isAutoUlti = isAuto;
-        }
-
-        imgAuto.sprite = isAuto ? enAuto : disAuto;
     }
 }

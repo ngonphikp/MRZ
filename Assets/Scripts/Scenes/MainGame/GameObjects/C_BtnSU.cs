@@ -7,13 +7,13 @@ public class C_BtnSU : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        MainGame.instance.SpeedUp(true);
-        MainGame.instance.isSta = true;
+        //MainGame.instance.SpeedUp(true);
+        //MainGame.instance.isSta = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        MainGame.instance.SpeedUp(false);
-        MainGame.instance.isSta = false;
+        //MainGame.instance.SpeedUp(false);
+        //MainGame.instance.isSta = false;
     }
 }
