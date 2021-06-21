@@ -32,7 +32,7 @@ public class C_UICharater : MonoBehaviour
         if (curEp != ep) ChangeEp();
     }
 
-    private void ChangeHp()
+    public void ChangeHp()
     {
         float dis = hp - curHp;
         if (dis < 0) dis *= -1;

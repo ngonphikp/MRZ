@@ -18,17 +18,17 @@
       "attack": 5,
       "speedRun": 0.75
     },
+    {
+      "id": "M2001",
+      "maxHP": 30,
+      "attack": 4,
+      "speedRun": 0.6
+	 },
 	{
       "id": "T1001",
       "maxHP": 200,
       "attack": 20,
       "speedRun": 1
-    },
-	{
-      "id": "M1019",
-      "maxHP": 30,
-      "attack": 5,
-      "speedRun": 0.75
     }
   ]
 }
