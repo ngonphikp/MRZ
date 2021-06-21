@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8287900312742863172}
   - component: {fileID: 8287900312742863173}
   - component: {fileID: 8287900312742863174}
+  - component: {fileID: 1626952094266087920}
   - component: {fileID: -9114574752891649799}
   - component: {fileID: 4083019646298827380}
   m_Layer: 0
@@ -124,6 +125,22 @@ MonoBehaviour:
   _animationName: animation3_arrow
   loop: 1
   timeScale: 1
+--- !u!70 &1626952094266087920
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8287900312742863192}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.3, y: 0.00010109}
+  m_Size: {x: 5, y: 0.9}
+  m_Direction: 1
 --- !u!114 &-9114574752891649799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +156,6 @@ MonoBehaviour:
   speed: 15
   explosion: {fileID: 7131255171221489999, guid: 5ed4469ced5a5334083160e1da3c6af2,
     type: 3}
-  actor: {fileID: 0}
 --- !u!114 &4083019646298827380
 MonoBehaviour:
   m_ObjectHideFlags: 0

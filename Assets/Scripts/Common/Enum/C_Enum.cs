@@ -9,4 +9,10 @@ public static class C_Enum
         Default,
         Boss
     }
+
+    public enum Find_Tag
+    {
+        Enemy,
+        Hero
+    }
 }
