@@ -63,11 +63,11 @@ public class MainGame2 : MonoBehaviour
         round = 0;
         datas.Clear();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 1; i++)
         {
             M_Character ct = new M_Character()
             {
-                id = "T1052",
+                id = "T1001",
                 position = i,
                 isEnemy = false
             };
@@ -113,7 +113,7 @@ public class MainGame2 : MonoBehaviour
         {
             M_Character enemy = new M_Character()
             {
-                id = Random.Range(0, 2) == 0 ? "M1018" : "M1010",                
+                id = Random.Range(0, 2) == 0 ? "M1018" : "M1010",
                 position = Random.Range(0, 5),
                 isEnemy = true,
                 lv = 1 + round / 5,
@@ -126,7 +126,7 @@ public class MainGame2 : MonoBehaviour
             enemys.Add(enemy);
         }
 
-        if(round % 3 == 0)
+        if (round % 3 == 0)
         {
             M_Character enemy = new M_Character()
             {
@@ -145,7 +145,7 @@ public class MainGame2 : MonoBehaviour
         }
 
         Timing.RunCoroutine(factory._Spawn(enemys.ToArray()));
-    }    
+    }
 
     private IEnumerator<float> _CountDownTime()
     {
@@ -156,12 +156,12 @@ public class MainGame2 : MonoBehaviour
 
             timeSum -= 1f;
 
-            if(timeSum <= timeShow)
+            if (timeSum <= timeShow)
             {
                 txtTime.text = timeSum + "";
                 txtTime.gameObject.SetActive(true);
 
-                if(timeSum == 0)
+                if (timeSum == 0)
                 {
                     timeSum = timeCount;
                     Spawn();
@@ -202,6 +202,6 @@ public class MainGame2 : MonoBehaviour
 
         yield return Timing.WaitForSeconds(1.0f);
         popUp.SetActive(true);
-        factory.Realese();        
+        factory.Realese();
     }
 }
