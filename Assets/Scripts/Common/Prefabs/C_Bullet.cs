@@ -23,7 +23,7 @@ public class C_Bullet : MonoBehaviour
         this.actor = actor;
 
         // Delay di chuyển bullet
-        yield return Timing.WaitForSeconds(timeDlMove /actor.speed);
+        yield return Timing.WaitForSeconds(timeDlMove / actor.speed);
 
         //while (true)
         //{
@@ -50,7 +50,7 @@ public class C_Bullet : MonoBehaviour
 
         //Destroy(gameObject);
 
-        mybody.AddForce(transform.right * speed * 20);
+        if (mybody) mybody.AddForce(transform.right * speed * 20);
 
         yield break;
     }

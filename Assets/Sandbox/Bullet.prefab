@@ -8,9 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5165155597596839151}
+  - component: {fileID: 1346403889010913205}
   - component: {fileID: 5165155597596839150}
-  - component: {fileID: 603193042025051538}
+  - component: {fileID: 1169325901874214619}
+  - component: {fileID: 3892937113818984460}
+  - component: {fileID: 5929933453108390135}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -18,20 +20,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5165155597596839151
-Transform:
+--- !u!224 &1346403889010913205
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5165155597596839149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.06, y: 12.91, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.06, y: 12.91}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!120 &5165155597596839150
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -73,7 +80,7 @@ LineRenderer:
   m_SortingOrder: 1
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 4.2, y: 0, z: 1}
+  - {x: 150, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.24275783
@@ -81,8 +88,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0508461
-        value: 0.191082
+        time: 0.11404419
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -90,8 +97,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.8954802
-        value: 1
+        time: 1
+        value: 0.7982501
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -138,7 +145,44 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
---- !u!114 &603193042025051538
+--- !u!70 &1169325901874214619
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165155597596839149}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 69.77761, y: -1.2562608}
+  m_Size: {x: 165.43822, y: 11.835378}
+  m_Direction: 1
+--- !u!50 &3892937113818984460
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165155597596839149}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &5929933453108390135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,8 +191,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5165155597596839149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d6ca3f6037ca5145adcd5178cba409f, type: 3}
+  m_Script: {fileID: 11500000, guid: 44fea0a45218d2e45a11241d9e7a1f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  timeToDestroy: 3
+  find_Tag: 0
+  speed: 20
+  explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}

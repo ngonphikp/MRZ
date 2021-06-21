@@ -113,7 +113,7 @@ public class MainGame2 : MonoBehaviour
         {
             M_Character enemy = new M_Character()
             {
-                id = Random.Range(0, 2) == 0 ? "M1018" : "M1010",
+                id = Random.Range(0, 2) == 0 ? "M1019" : "M1019",
                 position = Random.Range(0, 5),
                 isEnemy = true,
                 lv = 1 + round / 5,
@@ -130,7 +130,7 @@ public class MainGame2 : MonoBehaviour
         {
             M_Character enemy = new M_Character()
             {
-                id = Random.Range(0, 2) == 0 ? "M1018" : "M1010",
+                id = Random.Range(0, 2) == 0 ? "M1019" : "M1019",
                 position = Random.Range(0, 5),
                 isEnemy = true,
                 lv = 1 + round / 5,

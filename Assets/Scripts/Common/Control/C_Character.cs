@@ -43,6 +43,7 @@ public class C_Character : MonoBehaviour
     {
         ctl = this.GetComponent<I_Character>();
         sa = anim.gameObject.GetComponent<SkeletonAnimation>();
+        // anim = GetComponent<Animator>();
     }
 
     Status oldStatus;
@@ -52,7 +53,7 @@ public class C_Character : MonoBehaviour
 
         AutoAttack = Timing.RunCoroutine(_AutoAttack());
         AutoRun = Timing.RunCoroutine(_AutoRun());
-        AutoFind = Timing.RunCoroutine(_AutoFind());        
+        AutoFind = Timing.RunCoroutine(_AutoFind());
     }
 
     Action callback;
@@ -95,7 +96,7 @@ public class C_Character : MonoBehaviour
                     float step = character.speedRun * Time.deltaTime * speed;
                     transform.position = Vector3.MoveTowards(transform.position, finish, step);
                 }
-                else if(isRun) status = Status.Run;
+                else if (isRun) status = Status.Run;
             }
             yield return Timing.WaitForOneFrame;
         }
@@ -117,9 +118,9 @@ public class C_Character : MonoBehaviour
                         float step = character.speedRun * Time.deltaTime * speed;
                         transform.position = Vector3.MoveTowards(transform.position, tg.ctl.gameObject.transform.position, step);
                     }
-                    else if(isAttack) status = Status.Attack;
+                    else if (isAttack) status = Status.Attack;
                 }
-                else if(isFind) status = Status.Find;
+                else if (isFind) status = Status.Find;
             }
             yield return Timing.WaitForOneFrame;
         }
@@ -204,7 +205,7 @@ public class C_Character : MonoBehaviour
 
         while (true)
         {
-            if(isAnim1())
+            if (isAnim1())
             {
                 anim.SetTrigger("anim6");
                 ctl.Play(6);
