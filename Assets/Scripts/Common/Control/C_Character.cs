@@ -170,12 +170,13 @@ public class C_Character : MonoBehaviour
                 else if (isFind) status = Status.Find;
             }
             yield return Timing.WaitForOneFrame;
+
         }
     }
 
     public IEnumerator<float> _Beaten()
     {
-        character.speedRun = oldSpeedRun / 3;
+        character.speedRun = 0.001f;
         if (ctl != null)
         {
             if (character.CurHP > 0)
@@ -188,7 +189,7 @@ public class C_Character : MonoBehaviour
             }
         }
 
-        yield return Timing.WaitForSeconds(0.05f);
+        yield return Timing.WaitForSeconds(0.15f);
         character.speedRun = oldSpeedRun;
 
         yield break;
@@ -202,6 +203,7 @@ public class C_Character : MonoBehaviour
         isLive = character.CurHP != 0;
 
         if (!isLive) Timing.RunCoroutine(_Die());
+        // UICharater.ShowAnimHp(value);
     }
 
     private IEnumerator<float> _Die()

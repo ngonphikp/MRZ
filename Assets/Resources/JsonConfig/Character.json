@@ -23,6 +23,12 @@
       "maxHP": 30,
       "attack": 4,
       "speedRun": 0.6
+	 },
+	{
+      "id": "T1001",
+      "maxHP": 200,
+      "attack": 20,
+      "speedRun": 1
     }
   ]
 }

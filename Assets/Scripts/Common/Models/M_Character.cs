@@ -23,7 +23,9 @@ public class M_Character
 
     public C_Enum.Mode mode = C_Enum.Mode.Default;
 
-    public int CurHP { get => curHP; set
+    public int CurHP
+    {
+        get => curHP; set
         {
             if (value < 0) value = 0; if (value > maxHP) value = maxHP;
             curHP = value;
@@ -47,13 +49,13 @@ public class M_Character
 
         for (int i = 1; i < lv; i++)
         {
-            maxHP = (int)(maxHP * 1.2f);            
+            maxHP = (int)(maxHP * 1.2f);
 
             attack = (int)(attack * 1.2f);
             speedRun = speedRun * 1.1f;
         }
 
-        if(mode == C_Enum.Mode.Boss)
+        if (mode == C_Enum.Mode.Boss)
         {
             maxHP = (int)(maxHP * 1.5f);
 

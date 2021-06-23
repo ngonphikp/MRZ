@@ -19,6 +19,8 @@ public class C_UICharater : MonoBehaviour
 
     [SerializeField] GameObject fullMana = null;
     [SerializeField] GameObject fullManaUi = null;
+    [SerializeField] GameObject txtHPPref;
+    private GameObject hpUI = null;
 
     private void OnEnable()
     {
@@ -38,6 +40,8 @@ public class C_UICharater : MonoBehaviour
         if (dis < 0) dis *= -1;
         curHp = Mathf.Lerp(curHp, hp, Time.deltaTime * anim / dis);
         Hp.fillAmount = curHp;
+
+
     }
 
     public void ChangeEp()
@@ -79,5 +83,16 @@ public class C_UICharater : MonoBehaviour
         fullMana.SetActive(isShow);
 
         if (av && !isShow) av.GetComponent<Button>().interactable = false;
+    }
+
+    public void ShowAnimHp(int vlHP)
+    {
+        if (hpUI != null)
+        {
+            Destroy(hpUI);
+        }
+
+        hpUI = Instantiate(txtHPPref, this.gameObject.transform);
+        hpUI.GetComponent<Text>().text = vlHP.ToString();
     }
 }
