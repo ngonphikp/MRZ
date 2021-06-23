@@ -23,7 +23,7 @@ public class C_Radar : MonoBehaviour
 
         if (key != -1)
         {
-            //Debug.Log("Min: " + key + " => " + targets[key].dis);
+            Debug.Log("Min: " + key + " => " + targets[key].dis);
             return targets[key];
         }
 

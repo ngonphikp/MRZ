@@ -63,11 +63,11 @@ public class MainGame2 : MonoBehaviour
         round = 0;
         datas.Clear();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 1; i++)
         {
             M_Character ct = new M_Character()
             {
-                id = Random.Range(0, 2) % 2 == 0 ? "T1052" : "T1001",
+                id = "T1001",// Random.Range(0, 2) % 2 == 0 ? "T1052" : "T1001",
                 position = i,
                 isEnemy = false
             };
@@ -108,7 +108,7 @@ public class MainGame2 : MonoBehaviour
 
         int size = Mathf.Clamp(Random.Range(2, 4) + round / 3, 1, 7);
 
-        string[] arrId = { "M1010", "M1018", "M2001" };
+        string[] arrId = { "M2001" }; //"M1010", "M1018", 
 
         List<M_Character> enemys = new List<M_Character>();
         for (int i = 0; i < size; i++)

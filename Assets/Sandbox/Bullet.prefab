@@ -97,8 +97,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 0.7982501
+        time: 0.98883057
+        value: 0.30702388
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -111,7 +111,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.85882354, g: 0.12673081, b: 0.101960756, a: 0}
-      key1: {r: 0.99215686, g: 0.9671171, b: 0.12549017, a: 1}
+      key1: {r: 1, g: 0.31882894, b: 0.07075471, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -158,7 +158,7 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 69.77761, y: -1.2562608}
+  m_Offset: {x: -30, y: 0}
   m_Size: {x: 165.43822, y: 11.835378}
   m_Direction: 1
 --- !u!50 &3892937113818984460
@@ -195,5 +195,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   find_Tag: 0
-  speed: 20
+  speed: 50
   explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}

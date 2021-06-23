@@ -21,6 +21,7 @@ public class C_Character_T1001 : A_Character
     protected override IEnumerator<float> _Anim3()
     {
         C_LibSkill.Shoot(ctl, bl3d0, posB3, true, time3d0, time3db, ctl.target);
+        SoundManager.instance.PlayOneShot(Resources.Load<AudioClip>("Sounds/Hero_Sfx/GunShotSnglShotIn"));
         yield break;
     }
 
@@ -32,6 +33,7 @@ public class C_Character_T1001 : A_Character
     protected override IEnumerator<float> _Anim5()
     {
         C_LibSkill.Shoot(ctl, bl3d0, posB3, true, time3d0, time3db, ctl.target);
+        SoundManager.instance.PlayOneShot(Resources.Load<AudioClip>("Sounds/Hero_Sfx/GunShotSnglShotIn"));
         yield break;
 
     }

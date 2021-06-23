@@ -50,7 +50,7 @@ public class C_Bullet : MonoBehaviour
 
         //Destroy(gameObject);
 
-        if (mybody) mybody.AddForce(transform.right * speed * 20);
+        if (mybody) mybody.AddForce(transform.right * speed * 60);
 
         yield break;
     }
@@ -69,6 +69,7 @@ public class C_Bullet : MonoBehaviour
 
                     Timing.RunCoroutine(tg._Beaten());
                     tg.ChangeHp(-actor.character.attack);
+
                 }
 
                 Destroy(gameObject);

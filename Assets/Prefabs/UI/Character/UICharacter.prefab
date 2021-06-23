@@ -516,3 +516,5 @@ MonoBehaviour:
   ep: 0
   fullMana: {fileID: 0}
   fullManaUi: {fileID: 8370470652229807837}
+  txtHPPref: {fileID: 7147091913644390541, guid: 9520ec4e9fd0ab9488ab17698f0a546c,
+    type: 3}

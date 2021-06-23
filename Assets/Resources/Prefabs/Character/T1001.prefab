@@ -229,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8448521094134402435}
-  - component: {fileID: 1418622599396544796}
+  - component: {fileID: 1442399320219250890}
   - component: {fileID: 8353866997876541964}
   - component: {fileID: 5437390724038739680}
   - component: {fileID: 1416493434444645858}
@@ -264,8 +264,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &1418622599396544796
-CircleCollider2D:
+--- !u!70 &1442399320219250890
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -274,12 +274,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 35
+  m_Offset: {x: -12.027695, y: 53.976105}
+  m_Size: {x: 78.34177, y: 194.32025}
+  m_Direction: 0
 --- !u!50 &8353866997876541964
 Rigidbody2D:
   serializedVersion: 4
@@ -350,10 +350,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAn2: 0
-  timeAn3: 1
+  timeAn3: 0.5
   timeAn4: 0
-  timeAn5: 1
-  time3d0: 0.1
+  timeAn5: 0.5
+  time3d0: 0.6
   time3db: 0
   bl3d0: {fileID: 5929933453108390135, guid: b9ae309f754abcd49a7966a2d8505ea6, type: 3}
   posB3: {fileID: 1294998012543742001}
@@ -752,6 +752,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -793,7 +808,7 @@ PrefabInstance:
     - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5810501893368784726, guid: 8fed99bf0894d7649a6ba24f19461c5e,
         type: 3}
