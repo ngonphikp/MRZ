@@ -200,6 +200,7 @@ public class C_Character : MonoBehaviour
         isLive = character.CurHP != 0;
 
         if (!isLive) Timing.RunCoroutine(_Die());
+        // UICharater.ShowAnimHp(value);
     }
 
     private IEnumerator<float> _Die()
