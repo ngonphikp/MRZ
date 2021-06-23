@@ -63,7 +63,7 @@ public class MainGame2 : MonoBehaviour
         round = 0;
         datas.Clear();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 3; i++)
         {
             M_Character ct = new M_Character()
             {

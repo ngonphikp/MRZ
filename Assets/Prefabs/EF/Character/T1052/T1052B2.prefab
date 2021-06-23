@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   find_Tag: 0
-  speed: 15
+  speed: 20
   explosion: {fileID: 1041263816387704286, guid: 4b430080e90cb9341af4d5fd51757978,
     type: 3}
 --- !u!114 &-7152599734940216080

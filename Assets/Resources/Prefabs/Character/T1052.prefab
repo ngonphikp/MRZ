@@ -330,7 +330,7 @@ MonoBehaviour:
   isFind: 0
   isRun: 0
   status: 0
-  isAutoUlti: 0
+  isAutoUlti: 1
   isUlti: 0
   radius: 10
   direction: {x: -1, y: 0, z: 0}
@@ -534,6 +534,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8448521094134402435}
     m_Modifications:
+    - target: {fileID: 1785980729780001121, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730890122111109196, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280528878693527080, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5575042522484544712, guid: a0d5b4fff6a9ed64eb07653a438de2af,
         type: 3}
       propertyPath: m_Pivot.x
@@ -639,10 +654,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6985435555105424937, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061616569068341783, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370470652229807837, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8767510425261081934, guid: a0d5b4fff6a9ed64eb07653a438de2af,
         type: 3}
       propertyPath: m_Name
       value: UICharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767510425261081934, guid: a0d5b4fff6a9ed64eb07653a438de2af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816513326626708098, guid: a0d5b4fff6a9ed64eb07653a438de2af,
         type: 3}
@@ -719,6 +754,11 @@ PrefabInstance:
     - target: {fileID: 194567305268867613, guid: 6e96242b9490e9547957c5eb4b06f9ce,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194567305268867613, guid: 6e96242b9490e9547957c5eb4b06f9ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2237348508777243125, guid: 6e96242b9490e9547957c5eb4b06f9ce,

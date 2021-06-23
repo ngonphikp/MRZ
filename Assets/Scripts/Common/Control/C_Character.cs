@@ -72,6 +72,9 @@ public class C_Character : MonoBehaviour
         CircleCollider2D cc = GetComponent<CircleCollider2D>();
         if (cc != null) cc.enabled = true;
 
+        CapsuleCollider2D ca = GetComponent<CapsuleCollider2D>();
+        if (ca != null) ca.enabled = true;
+
         UICharater.hp = character.CurHP * 1.0f / character.maxHP;
         UICharater.ep = character.CurEP * 1.0f / character.maxEP;
 
@@ -205,6 +208,10 @@ public class C_Character : MonoBehaviour
     {
         CircleCollider2D cc = GetComponent<CircleCollider2D>();
         if (cc != null) cc.enabled = false;
+
+        CapsuleCollider2D ca = GetComponent<CapsuleCollider2D>();
+        if (ca != null) ca.enabled = false;
+
         status = Status.None;
         MainGame2.instance.DestroyCharacter(character.isEnemy);
 

@@ -64,11 +64,11 @@ public class C_Bullet : MonoBehaviour
             {
                 if (explosion)
                 {
+                    tg.ChangeHp(-actor.character.attack);
                     GameObject fx = Instantiate(explosion, tg.gameObject.transform);
                     fx.transform.position = this.gameObject.transform.position;
 
                     Timing.RunCoroutine(tg._Beaten());
-                    tg.ChangeHp(-actor.character.attack);
                 }
 
                 Destroy(gameObject);

@@ -14,7 +14,7 @@ public class C_Radar : MonoBehaviour
         int key = -1;
         foreach (KeyValuePair<int, Target> item in targets)
         {
-            if (min > item.Value.dis)
+            if (min > item.Value.dis && item.Value.ctl.isLive)
             {
                 min = item.Value.dis;
                 key = item.Key;
